@@ -16,6 +16,8 @@ class String
 
   def count_sentences
     self.split("." || "?" || "!")
-    self.count unless self.include?("")
+    self.each do |sentences|
+    sentences.count unless sentences.include?("")
+  end
   end
 end
